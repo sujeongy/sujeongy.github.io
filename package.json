@@ -4,10 +4,10 @@
   "private": "true",
   "scripts": {
     "dev": "next --turbopack",
-    "build": "next build && pagefind --site out",
     "start": "next start",
-    "watcher": "concurrently \"next dev\" \"tsx ./watcher.ts\" --kill-others",
-    "deploy": "gh-pages -d out --dotfiles"
+    "lint": "next lint",
+    "build": "next build && npx pagefind --site out --output-path out/_pagefind",
+    "deploy": "gh-pages -d out -t --dotfiles"
   },
   "dependencies": {
     "next": "^16.1.1",
