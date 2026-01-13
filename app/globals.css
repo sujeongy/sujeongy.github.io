@@ -1,0 +1,25 @@
+/* app/globals.css */
+
+.nextra-card {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100px;
+}
+
+.nextra-card > span {
+  padding: 0;
+}
+
+.nextra-card svg {
+  width: 2rem !important;
+  height: 2rem !important;
+  margin-bottom: 0.5rem;
+}
+
+.nextra-card h3 {
+  font-weight: 700 !important;
+  margin-bottom: 0.25rem;
+}

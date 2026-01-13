@@ -1,0 +1,30 @@
+import { Callout } from 'nextra/components'
+
+# Git Command
+## 💥 커밋 히스토리 완전 삭제 (저장소 초기화)
+
+기존 커밋 기록(History)을 싹 날리고, 현재 상태를 **"첫 번째 커밋"**으로 만들고 싶을 때 사용합니다.
+
+<Callout type="error" emoji="🚨">
+  **주의:** `.git` 폴더를 삭제하므로 **모든 커밋 로그와 브랜치 기록이 영구적으로 삭제**됩니다.  
+  팀 프로젝트에서는 절대 함부로 사용하지 마세요.
+</Callout>
+
+```bash
+# 1. 로컬 저장소의 git 설정 삭제 (히스토리 날리기)
+rm -rf .git
+
+# 2. 로컬 저장소 다시 초기화
+git init
+
+# 3. 파일 전체 추가 및 첫 커밋 작성
+git add .
+git commit -m "Initial commit"
+
+# 4. (선택) 커밋 확인
+git log
+
+# 5. 원격 저장소 재연결 및 강제 푸시
+# <url> 부분에 깃허브 주소를 넣으세요.
+git remote add origin <url>
+git push -u --force origin main

@@ -1,17 +1,28 @@
 {
-  "name": "my-wiki",
-  "version": "0.1.0",
-  "private": true,
+  "name": "sujeongy-wiki",
+  "version": "0.0.1",
+  "private": "true",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next --turbopack",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "postbuild": "pagefind --site .next/server/app --output-path public/_pagefind",
+    "watcher": "concurrently \"next dev\" \"tsx ./watcher.ts\" --kill-others",
+    "deploy": "yarn build && yarn postbuild && gh-pages -d out"
   },
   "dependencies": {
-    "next": "16.1.1",
-    "nextra": "4.6.1",
-    "nextra-theme-docs": "4.6.1",
-    "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "next": "^16.1.1",
+    "nextra": "^4.6.1",
+    "nextra-theme-docs": "^4.6.1",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "gh-pages": "^6.3.0",
+    "pagefind": "^1.4.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "ws": "^8.19.0"
   }
 }
