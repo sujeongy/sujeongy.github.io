@@ -1,1 +1,1 @@
-[![My Tech Wiki](https://img.shields.io/badge/📚_My_Tech_Wiki-Click_Here-blue?style=for-the-badge)](https://sujoengy.github.io)
+[![Sujeongy. Dev Wiki](https://img.shields.io/badge/📚_My_Tech_Wiki-Click_Here-blue?style=for-the-badge)](https://sujeongy.github.io)
