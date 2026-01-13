@@ -8,7 +8,7 @@
     "start": "next start",
     "postbuild": "pagefind --site .next/server/app --output-path public/_pagefind",
     "watcher": "concurrently \"next dev\" \"tsx ./watcher.ts\" --kill-others",
-    "deploy": "yarn build && yarn postbuild && gh-pages -d out"
+    "deploy": "gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "next": "^16.1.1",
