@@ -44,6 +44,17 @@ export default async function RootLayout({ children }) {
       <Head
       // ... Your additional head options
       >
+        <meta
+          name='naver-site-verification'
+          content='619f38f260bd40207b9346da8032dd5053d103c7'
+        />
+        <meta property='og:type' content='website' />
+        <meta property='og:title' content='Sujeongy.Dev Wiki' />
+        <meta
+          property='og:description'
+          content='8년 차 프론트엔드 개발자 유수정의 개인 위키입니다.'
+        />
+        <meta property='og:url' content='https://sujeongy.github.io/' />
         {/* Your additional tags should be passed as `children` of `<Head>` element */}
       </Head>
       <body>
