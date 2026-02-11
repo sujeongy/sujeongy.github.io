@@ -2,5 +2,6 @@
 module.exports = {
   siteUrl: "https://sujeongy.github.io/",
   generateRobotsTxt: true,
-  generateIndexSitemap: false
+  generateIndexSitemap: false,
+  outDir: "out",
 };

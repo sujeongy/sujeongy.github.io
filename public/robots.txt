@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://sujeongy.github.io/
-
-# Sitemaps
-Sitemap: https://sujeongy.github.io/sitemap.xml

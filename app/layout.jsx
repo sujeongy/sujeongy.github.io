@@ -48,6 +48,10 @@ export default async function RootLayout({ children }) {
           name='naver-site-verification'
           content='619f38f260bd40207b9346da8032dd5053d103c7'
         />
+        <meta
+          name='google-site-verification'
+          content='O0OpNYqHrV6rv7Da5zT35XiLHNpl1eUQPR4DVXujpvw'
+        />
         <meta property='og:type' content='website' />
         <meta property='og:title' content='Sujeongy.Dev Wiki' />
         <meta

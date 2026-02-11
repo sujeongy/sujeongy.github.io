@@ -6,7 +6,7 @@
     "dev": "next --turbopack",
     "start": "next start",
     "lint": "next lint",
-    "build": "next build && next-sitemap && npx pagefind --site out --output-path out/_pagefind",
+    "build": "next build && npx pagefind --site out --output-path out/_pagefind && next-sitemap",
     "deploy": "gh-pages -d out -t --dotfiles"
   },
   "dependencies": {
